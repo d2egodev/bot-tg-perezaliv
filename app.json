@@ -1,0 +1,63 @@
+{
+      "name": "Telegram_VC_Bot",
+      "description": "An Anime themed Telegram group management bot.",
+      "keywords": [
+         "telegram",
+         "anime",
+         "group",
+         "manager",
+         "Telegram_VC_Bot"
+      ],   
+   "repository": "https://github.com/only-music/Telegram_VC_Bot",
+   "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+   "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+    }     
+  ],      
+   "env": {
+      "TOKEN": {
+         "description": "Your bot token. Get one from @BotFather :)",
+         "required": true,
+         "value": ""
+      },
+      "API_ID": {
+         "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": ""
+      },
+      "API_HASH": {
+         "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": ""
+      },          
+      "OWNER_ID": {
+         "description": "Your user ID as an integer.",
+         "required": true,
+         "value": "1469528232"
+      },
+      "STRING": {
+         "description": "The String Name",
+         "required": true,
+         "value": ""
+      },
+   "keywords": [
+      "telegram",
+      "anime",
+      "group",
+      "manager",
+      "Telegram_VC_Bot"
+   ],
+   "name": "Telegram_Music_Bot",
+   "repository": "https://github.com/only-music/Telegram_VC_Bot"
+}
